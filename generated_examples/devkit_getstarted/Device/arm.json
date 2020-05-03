@@ -1,0 +1,24 @@
+{
+    {
+        "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+        "contentVersion": "1.0.0.0",
+        "parameters": {},
+        "variables": {},
+        "resources": [
+            {
+                "type": "Microsoft.Storage/storageAccounts",
+                "apiVersion": "2018-07-01",
+                "name": "StorageAccount1",
+                "location": "[resourceGroup().location]",
+                "tags": {
+                    "displayName": "StorageAccount1"
+                },
+                "sku": {
+                    "name": "Standard_LRS"
+                },
+                "kind": "StorageV2"
+            }
+        ],
+        "outputs": {}
+    } 
+}

@@ -1,0 +1,48 @@
+database("events")
+
+.create table events (deviceId: string, messageId: long, messageCreatedTime: datetime, temperature: double, humidity: double, eventProcessedUtcTime: datetime, eventEnqueuedUtcTime: datetime)
+.create table events ingestion json mapping 'EventJSONMapping' '[{"column":"deviceId","path":"$.deviceId","datatype":"string"},{"column":"messageId","path":"$.messageId","datatype":"long"},{"column":"messageCreatedTime","path":"$.messageCreatedTime","datatype":"datetime"},{"column":"temperature","path":"$.temperature","datatype":"double"},{"column":"humidity","path":"$.humidity","datatype":"double"},{"column":"eventProcessedUtcTime","path":"$.EventProcessedUtcTime","datatype":"datetime"},{"column":"eventEnqueuedUtcTime","path":"$.EventEnqueuedUtcTime","datatype":"datetime"}]'
+
+https://docs.microsoft.com/enus/azure/kusto/management/tables
+https://docs.microsoft.com/enus/azure/kusto/query/seriesdecomposeanomaliesfunction
+
+.create table bloblogs (
+versionnumber: long,
+requeststarttime: datetime,
+operationtype: string,
+requeststatus: string,
+httpstatuscode: long,
+endtoendlatencyinms: int,
+serverlatencyinms: int,
+authenticationtype: string,
+requesteraccountname: string,
+owneraccountname: string,
+servicetype: string,
+requesturl: string,
+requestedobjectkey: string,
+requestidheader: string,
+operationcount: int,
+requesteripaddress: string,
+requestversionheader: string,
+requestheadersize: long,
+requestpacketsize: long,
+responseheadersize: long,
+responsepacketsize: long,
+requestcontentlength: long,
+requestmd5: string,
+servermd5: string,
+etagidentifier: string,
+lastmodifiedtime: datetime,
+conditionsused: string,
+useragentheader: string,
+referrerheader: string,
+clientrequestid: string,
+userobjectid: string,
+tenantid: string,
+applicationid: string,
+audience: string,
+issuer: string,
+userprincipalname: string,
+reservedfield: string,
+authorizationdetail: string
+)
