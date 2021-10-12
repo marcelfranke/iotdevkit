@@ -34,6 +34,14 @@
             "system_error": "cpp",
             "type_traits": "cpp",
             "typeinfo": "cpp"
+        },
+        "databricks.workspaceConfiguration": {
+            "workspaceGuid": "e167661d-a8c0-2120-137f-3c042b1d64a2",
+            "lastActiveConnection": "Playground"
+        },
+        "azure-iot-edge.defaultPlatform": {
+            "platform": "amd64",
+            "alias": null
         }
     }
 }
