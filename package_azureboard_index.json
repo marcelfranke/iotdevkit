@@ -747,41 +747,12 @@
                          }
                      ],
           "toolsDependencies":  [
-                                   {
-                                        "packager":  "AZ3166",
-                                        "name":  "openocd",
-                                        "version":  "0.10.0"
-                                    }
+                                   
                                 ]
       }      
       ],
       "tools": [
-        {
-          "name": "openocd",
-          "version": "0.10.0",
-          "systems": [
-            {
-              "host": "i686-linux-gnu",
-              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-linux32-0.10.0.tar",
-              "archiveFileName": "openocd-linux32-0.10.0.tar"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-linux64-0.10.0.tar",
-              "archiveFileName": "openocd-linux64-0.10.0.tar"
-            },
-            {
-              "host": "i686-mingw32",
-              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-0.10.0-32.zip",
-              "archiveFileName": "openocd-0.10.0-32.zip"
-            },
-            {
-              "host": "i386-apple-darwin11",
-              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-0.10.0.tar.gz",
-              "archiveFileName": "openocd-0.10.0.tar.gz"
-            }
-          ]
-        }
+        
       ]
     }
   ]
