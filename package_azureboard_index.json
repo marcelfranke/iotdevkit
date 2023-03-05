@@ -1,0 +1,97 @@
+{
+  "packages": [
+    {
+      "name": "AZ3166",
+      "maintainer": "Microsoft Developer",
+      "websiteURL": "https://microsoft.github.io/azure-iot-developer-kit/",
+      "email": "aziotdevkit@microsoft.com",
+      "help": {
+        "online": "https://microsoft.github.io/azure-iot-developer-kit/"
+      },
+      "platforms": [
+      {
+          "name":  "MXChip - Microsoft Azure IoT Developer Kit",
+          "architecture":  "stm32f4",
+          "version":  "2.0.0",
+          "category":  "Contributed",
+          "help":  {
+                       "online":  "https://github.com/Microsoft/azure-iot-developer-kit"
+                   },
+          "url":  "https://github.com/microsoft/devkit-sdk/releases/download/2.0.0/AZ3166-2.0.0.zip",
+          "archiveFileName":  "AZ3166-2.0.0.zip",
+          "boards":  [
+                         {
+                             "name":  "MXChip - Microsoft Azure IoT Developer Kit AZ3166"
+                         }
+                     ],
+          "toolsDependencies":  [
+                                    {
+                                        "packager":  "AZ3166",
+                                        "name":  "arm-none-eabi-gcc",
+                                        "version":  "5_4-2016q3"
+                                    },
+                                    {
+                                        "packager":  "AZ3166",
+                                        "name":  "openocd",
+                                        "version":  "0.10.0"
+                                    }
+                                ]
+      }      
+      ],
+      "tools": [
+        {
+          "name": "arm-none-eabi-gcc",
+          "version": "5_4-2016q3",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "archiveFileName": "gcc-arm-none-eabi-5_4-2016q3-20160926-win32.zip",
+              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-5_4-2016q3-20160926-win32.zip"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-5_4-2016q3.tar.gz",
+              "archiveFileName": "gcc-arm-none-eabi-5_4-2016q3.tar.gz"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-6-2017-q1-linux64.tar.gz",
+              "archiveFileName": "gcc-arm-none-eabi-6-2017-q1-linux64.tar.gz"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-5_4-2016q3-linux32.tar.gz",
+              "archiveFileName": "gcc-arm-none-eabi-5_4-2016q3-linux32.tar.gz"
+            }
+          ]
+        },
+        {
+          "name": "openocd",
+          "version": "0.10.0",
+          "systems": [
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-linux32-0.10.0.tar",
+              "archiveFileName": "openocd-linux32-0.10.0.tar"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-linux64-0.10.0.tar",
+              "archiveFileName": "openocd-linux64-0.10.0.tar"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-0.10.0-32.zip",
+              "archiveFileName": "openocd-0.10.0-32.zip"
+            },
+            {
+              "host": "i386-apple-darwin11",
+              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-0.10.0.tar.gz",
+              "archiveFileName": "openocd-0.10.0.tar.gz"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
