@@ -768,7 +768,7 @@
             {
               "host": "i686-mingw32",
               "archiveFileName": "gcc-arm-none-eabi-5_4-2016q3-20160926-win32.zip",
-              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-5_4-2016q3-20160926-win32_1.zip"
+              "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-5_4-2016q3-20160926-win32.zip"
             },
             {
               "host": "x86_64-apple-darwin",
