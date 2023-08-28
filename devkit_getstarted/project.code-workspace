@@ -42,6 +42,10 @@
         "azure-iot-edge.defaultPlatform": {
             "platform": "amd64",
             "alias": null
-        }
+        },
+        "python.envFile": "${workspaceFolder}\\.databricks\\.databricks.env",
+        "databricks.python.envFile": "${workspaceFolder}/.env",
+        "jupyter.interactiveWindow.cellMarker.codeRegex": "^# COMMAND ----------|^# Databricks notebook source|^(#\\s*COMMAND\\s*[-]*|#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\])",
+        "jupyter.interactiveWindow.cellMarker.default": "# COMMAND ----------"
     }
 }

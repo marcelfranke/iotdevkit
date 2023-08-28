@@ -1,0 +1,36 @@
+{
+    "componentConfigs": [
+        {
+            "id": "47609b1d-4d20-68e2-150c-b0090fa6f985",
+            "folder": "",
+            "name": "",
+            "dependencies": [],
+            "type": "IoTHub",
+            "componentInfo": {
+                "values": {
+                    "iotHubConnectionString": "HostName=iothPlayground.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=XwReLVD2jY8H7pKzPky1QKkZ6KE4fiLTaabwOrDC3vc=",
+                    "eventHubConnectionString": "Endpoint=sb://iothub-ns-iothplaygr-24734398-3297b90554.servicebus.windows.net/;      SharedAccessKeyName=iothubowner;SharedAccessKey=XwReLVD2jY8H7pKzPky1QKkZ6KE4fiLTaabwOrDC3vc=",
+                    "eventHubConnectionPath": "iothplayground"
+                }
+            }
+        },
+        {
+            "id": "81cd41b3-f954-c02a-0565-bf55c4e6e683",
+            "folder": "",
+            "name": "",
+            "dependencies": [
+                {
+                    "id": "47609b1d-4d20-68e2-150c-b0090fa6f985",
+                    "type": 1
+                }
+            ],
+            "type": "IoTHubDevice",
+            "componentInfo": {
+                "values": {
+                    "iotHubConnectionString": "HostName=iothPlayground.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=XwReLVD2jY8H7pKzPky1QKkZ6KE4fiLTaabwOrDC3vc=",
+                    "iotHubDeviceConnectionString": "HostName=iothPlayground.azure-devices.net;DeviceId=IoTDevKit;SharedAccessKey=g2+hPKXGkweCMwuzzyPxfH1GUuxA6PiR+/bWKHenPs8="
+                }
+            }
+        }
+    ]
+}
